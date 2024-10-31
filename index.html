@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌲🌳🌴</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="swithDivContain">
+      <div class="longCanvas">
+        <div class="introduction">
+          <audio autoplay src="./assets/music/san.mp3" hidden></audio>
+          <div class="mask">
+            <div class="introductionText">
+              <span>音乐，</span><span>滋养你的灵魂。</span>
+            </div>
+            <span class="introductionTitle">———《music》</span>
+          </div>
+          <div class="seeMore">↓ 滚动鼠标或向下滑动查看更多 ↓</div>
+        </div>
+        <div class="showMe">
+          <div class="showMeContent">
+            <div class="headImg"></div>
+            <p>Hello</p>
+            <p>欢迎来到我的个人主页</p>
+            <p>୧⍤⃝🔥<a target="_blank" href="https://www.gov.cn">点这里</a></p>
+
+            <p>请输入你的名字:</p>
+            <div class="input-container">
+              <input
+                type="text"
+                id="inputText"
+                placeholder="在这里输入你的名字"
+              />
+
+              <button
+                onclick="showFeedback()"
+                style="color: black; font-family: 'Times New Roman', serif"
+              >
+                输入名字后,点我
+              </button>
+            </div>
+
+            <p id="feedback"></p>
+            <div class="thankList">
+              i love you!!!
+              <a
+                target="_blank"
+                href="http://www.nmc.cn/publish/forecast/ASC/pidou.html"
+                >轮回眼泪</a
+              >
+              <a target="_blank" href="https://www.gov.cn">天下第一人民</a>
+              <a
+                target="_blank"
+                href="https://www.bilibili.com/video/BV1R6421G7kx/?spm_id_from=333.337.search-card.all.click&vd_source=55e99257f31967978d9c1e5b3dac7d88"
+                >神威</a
+              >
+              <a
+                target="_blank"
+                href="https://www.bilibili.com/video/BV1qt4y1D7ex/?spm_id_from=333.337.search-card.all.click&vd_source=55e99257f31967978d9c1e5b3dac7d88"
+                >别天神</a
+              >
+              <a
+                target="_blank"
+                href="https://www.bilibili.com/video/BV1Gb4y197xe/?spm_id_from=333.337.search-card.all.click&vd_source=55e99257f31967978d9c1e5b3dac7d88"
+                >伊邪那美</a
+              >
+              <a
+                target="_blank"
+                href="https://www.bilibili.com/video/BV1KfC9YLEbU/?spm_id_from=333.337.search-card.all.click&vd_source=55e99257f31967978d9c1e5b3dac7d88"
+                >伊邪那岐</a
+              >
+              <a
+                target="_blank"
+                href="https://www.bilibili.com/video/BV1Bb4y127Uu/?spm_id_from=333.337.search-card.all.click&vd_source=55e99257f31967978d9c1e5b3dac7d88"
+                >地爆天星</a
+              >
+              <a target="_blank" href="https://cn.bing.com">bing</a>
+            </div>
+          </div>
+        </div>
+        <div class="threeTest">
+          <p>hello</p>
+          <p>欢迎来到我的个人主页</p>
+          <a value="button" href="Video_00.mp4">i love you!!!点点我</a>
+
+          <div class="music-player">
+            <audio
+              id="audioPlayer"
+              src="./assets/music/san.mp3"
+              preload="auto"
+            ></audio>
+            <button id="playPauseBtn" class="control-btn">▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script/main.js"></script>
+
+    <style></style>
+    <script>
+      function showFeedback() {
+        // 获取输入框中的值
+        var inputText = document.getElementById("inputText").value;
+        // 设置反馈文本
+        var feedbackText = inputText + "，我爱你!!!(i love you!!!)";
+        // 显示反馈
+        document.getElementById("feedback").innerText = feedbackText;
+      }
+    </script>
+  </body>
+</html>
